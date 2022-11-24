@@ -1,0 +1,32 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/static.css 
+block content 
+    section#introSection 
+            div Welcome to Rohit's Dance academy 
+            div.small Eat Sleep Dance Repeat
+
+    section#MissionSection
+            h2 Our Mission
+            div.card 
+                h3 Self Confidence
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tenetur, deserunt dolorem, quo, omnis cupiditate facere necessitatibus rerum aspernatur provident magnam molestias. Vel optio eius minima ducimus in voluptas facilis numquam doloremque ab?
+            div.card 
+                h3 Follow your passion
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ex libero nostrum accusamus, modi explicabo praesentium quas rem asperiores tempore dicta ducimus voluptatibus voluptates aspernatur earum. Atque qui voluptatibus fugit.
+            div.card 
+                h3 Meet your culture
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi qui? Eligendi sit iusto nostrum perspiciatis quo illo. Doloribus nemo omnis nulla architecto veniam error labore, eius ducimus repudiandae consequuntur!
+
+    section#sponsorSection 
+            h2  Our Sponsor 
+            div#sponsors 
+                img(src="../static/spons/logo1.png", alt="Sponsor Image", class="spImage")
+                img(src="../static/spons/logo2.png", alt="Sponsor Image", class="spImage")
+                img(src="../static/spons/logo3.png", alt="Sponsor Image", class="spImage")
+                img(src="../static/spons/logo4.png", alt="Sponsor Image", class="spImage")
